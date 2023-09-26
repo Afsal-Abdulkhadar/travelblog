@@ -1,0 +1,290 @@
+#nav1{
+    border-bottom: 5px solid red;
+}
+
+#a1:hover{
+    background-color: rgb(234, 209, 180);
+    color: black;
+    border-radius: 10%;
+}
+#img1{
+    width: 100%;
+    height: 400px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+#home::before{
+    content: "";
+    background-image: url("./images/img-13.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.main{
+    border: 3px ridge rgb(16, 10, 10);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    position: absolute;
+    top: 220px;
+    left: 5%;
+    background-color: rgba(25, 24, 23, 0.644);
+}
+
+.main:hover{
+    background-color: rgba(169, 136, 105, 0.786);
+    box-shadow: 5px 5px;
+}
+
+.main h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.main h4{
+    color: white;
+}
+
+.main h2:hover{
+    color: black;
+}
+h2:hover{
+    color:rgb(243, 139, 66);
+}
+
+.div1{
+    width: 65%;
+    height: 270px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    border-radius: 10px;
+    margin-top: 170px;
+    margin-left: 350px;
+}
+
+#img2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity o.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.div1:hover .overlay{
+    opacity: 0.8;
+}
+
+.div2{
+    width: 65%;
+    height: 270px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    border-radius: 10px;
+    margin-top: 170px;
+    margin-left: 250px;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity o.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.content1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.div2:hover .overlay1{
+    opacity: 0.8;
+}
+
+.div3{
+    width: 65%;
+    height: 270px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgb(40, 40, 40);
+    border-radius: 10px;
+    margin-top: 170px;
+    margin-left: 150px;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity o.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.content2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.div3:hover .overlay2{
+    opacity: 0.8;
+}
+
+#adv h2{
+    margin-top: -50px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+#adv .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding: 100px 50px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    background: #333;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgb(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    height: 400px;
+}
+
+.container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    width: 230px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+    top: -150px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgb(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    padding: 0 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    top: 250px;
+    height: 400px;
+} 
+
+.container .card .content h4{
+    font-size: 20px;
+    font-weight: 100%;
+    color: rgb(121, 73, 209);
+}
+
+.container .card .content p{
+    color: #fff;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#h21{
+    margin-top: -100px;
+}
+
+#img3{
+    width: 100%;
+    height: 250px;
+}
+
+#img3:hover{
+    box-shadow: 7px 7px 7px;
+}
+
+h2{
+    font-family: 'Skranji', cursive;
+}
+
+#vid1:hover{
+    box-shadow: 5px 5px 5px rgb(228, 124, 124);
+}
+
+
+
+
